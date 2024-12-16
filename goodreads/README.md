@@ -196,7 +196,7 @@ The graph illustrates the results of the K-Means clustering algorithm applied to
 ## Conclusion
 The K-Means clustering results displayed in this graph reveal distinct groupings among the dataset based on variance captured by PCA. Understanding these clusters enhances the potential for nuanced analysis and decision-making grounded in data patterns. Further exploration of each cluster will likely yield insights relevant to the overarching problem statement.
 
-#Analysis Statement: Investigate the impact of work ratings count and average rating on the overall ratings count of books to identify key factors influencing reader engagement on Goodreads.
+# Analysis Statement: Investigate the impact of work ratings count and average rating on the overall ratings count of books to identify key factors influencing reader engagement on Goodreads.
 ![Failed To Load Image](statement.png)
 ## Detailed Analysis of the Graph
 
