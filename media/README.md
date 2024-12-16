@@ -52,7 +52,6 @@
 - **Repeat Viewing:** The low repeatability score suggests limited interest in re-watching content, pointing to a potential area to explore user engagement strategies.
 - **Content Strategy:** Dominance of movies could inform future content acquisition or creation strategies, ensuring alignment with audience preferences.
 
-#Correlation Heatmap: 
 ![Failed To Load Image](heatmap.png)
 # Correlation Heatmap Analysis
 
@@ -83,7 +82,6 @@ The heatmap visualizes the correlation between three variables: **overall**, **q
 
 5. **Data-Driven Decision Making**: Utilize data analytics to further explore the factors influencing quality and repeatability, which can guide refined interventions and resource allocation in the future.
 
-#Regression Analysis: 
 ![Failed To Load Image](regression.png)
 ## Analysis of the Predicted vs Actual Values Graph 
 
@@ -118,8 +116,7 @@ The graph displays a scatter plot comparing predicted values against actual valu
 The scatter plot provides valuable insights into the performance of the regression model. By addressing the discrepancies and refining the model based on the observations, improved predictions can be achieved in future analyses.
 
 
-#Outlier Detection: 
-![Failed o Load Image](distribution_before_outliers.png)![Failed To Load Image](outlier.png)
+![Failed To Load Image](distribution_before_outliers.png)![Failed To Load Image](outlier.png)
 # Analysis of Outliers in Numerical Data
 
 ### Graph Overview
@@ -151,7 +148,6 @@ The provided graph represents outliers in a dataset plotted against an index. It
 
 This analysis highlights the critical importance of addressing outliers within numerical data to ensure robust, reliable datasets for analysis and decision-making.
 
-#Clustering: 
 ![Failed To Load Image](clustering.png)
 ### Graph Analysis
 
@@ -184,7 +180,7 @@ The provided graph depicts the results of K-Means clustering with \( k=10 \). It
 ### Conclusion
 The clustering output demonstrates variable densities and potential overlap among the clusters. This necessitates an assessment of the parameters used and consideration of further analytical methods to validate and refine the clustering strategy.
 
-#Analysis Statement: Investigate the impact of film quality and repeatability on overall viewer ratings across different languages and types of media to identify key factors influencing audience satisfaction.
+# Analysis Statement: Investigate the impact of film quality and repeatability on overall viewer ratings across different languages and types of media to identify key factors influencing audience satisfaction.
 ![Failed To Load Image](statement.png)
 ### Graph Analysis
 
