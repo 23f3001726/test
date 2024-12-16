@@ -57,7 +57,6 @@ The dataset contains happiness-related metrics across various countries and year
 - **Future Research**: 
   - Further investigation into the correlation between psychological well-being and economic indicators may yield insights to optimize societal happiness.
 
-#Correlation Heatmap: 
 ![Failed To Load Image](heatmap.png)
 # Correlation Heatmap Analysis
 
@@ -101,7 +100,6 @@ The correlation heatmap visually represents the relationships between multiple v
 ## Conclusion
 The correlation heatmap reveals valuable insights into the relationships among economic performance, health, social factors, and governance perceptions, highlighting critical areas for policy focus and public health strategies.
 
-#Regression Analysis: 
 ![Failed To Load Image](regression.png)
 # Analysis of Predicted vs Actual Values Graph
 
@@ -143,7 +141,6 @@ The graph presents a scatter plot showcasing the relationship between predicted 
 ## Conclusion
 The graph indicates a generally effective regression model with a strong positive correlation between predicted and actual values. However, the presence of outliers calls for a deeper investigation to enhance model accuracy and performance further.
 
-#Outlier Detection: 
 ![Failed o Load Image](distribution_before_outliers.png)![Failed To Load Image](outlier.png)
 # Outlier and Anomaly Detection Analysis
 
@@ -184,7 +181,6 @@ The provided scatter plot displays various indicators against their index, with 
 ### Conclusion
 This analysis highlights the importance of recognizing and appropriately dealing with outliers in numerical data. Correct handling can lead to better insights and more accurate modeling in various applications, including economic, social, and health-related studies.
 
-#Clustering: 
 ![Failed To Load Image](clustering.png)
 ## Analysis of K-Means Clustering Graph
 
@@ -229,7 +225,7 @@ The provided scatter plot illustrates the results of K-Means clustering with \( 
 ### Conclusion
 This clustering graph effectively demonstrates the separation of two groups within the data set, providing actionable insights for interpretation and further exploration in the context of data analysis and decision-making.
 
-#Analysis Statement: "Investigate the impact of economic and social factors on happiness levels across different countries over time, focusing on the relationships between GDP per capita, social support, healthy life expectancy, and perceptions of corruption."
+# Analysis Statement: "Investigate the impact of economic and social factors on happiness levels across different countries over time, focusing on the relationships between GDP per capita, social support, healthy life expectancy, and perceptions of corruption."
 ![Failed To Load Image](statement.png)
 # Analysis of the Graph: Impact of Economic and Social Factors on Happiness Levels
 
