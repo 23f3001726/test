@@ -154,7 +154,7 @@ The graph serves as a powerful tool for highlighting outliers within a dataset r
 # Detailed Analysis of the K-Means Clustering Graph
 
 ## Overview
-The graph illustrates the results of the K-Means clustering algorithm applied to a dataset, utilizing the first two principal components derived from PCA (Principal Component Analysis). The number of clusters (k) is set to 4, and points are colored according to their designated cluster labels.
+The graph illustrates the results of the K-Means clustering algorithm applied to a dataset, utilizing the first two principal components derived from PCA (Principal Component Analysis). The number of clusters (k) is set to 3, and points are colored according to their designated cluster labels.
 
 ## Graph Components
 1. **Axes**:
