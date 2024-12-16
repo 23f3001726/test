@@ -101,7 +101,7 @@ def graph(statement):
             ]
     return str(chatgpt(message))
 
-#Get code for graph generation graph
+#Get code for graph generation
 def analyse_graph(details, statement, graph, filename):
     message = [
                 {"role": "system", "content": "You are an expert of data analysis, data visualisation. Give me code(No extra text) for analysis statement over given file. Code must be error-free with proper exception handling(atleat print error). Don't use deprecated/to be deprecated methods. Use " + graph + " for visualisation using seaborn(enhance with titles, axis labels, legends, colors, annotations, and enhanced customization). Choose data points judiciously, for visualisation(there might be too much data points on graph, making it cluttered and un-readable)."},
@@ -165,9 +165,9 @@ def custom_serializer(obj):
         return int(obj)  # Convert numpy.int64 to int
     raise TypeError(f"Type {type(obj)} not serializable")
 
+#get file details
 detail = file_details(path)
 #Drop empty numerical rows
-
 
 # File path of the CSV file
 file_path = detail['file_path']
@@ -209,8 +209,8 @@ cleaned_response = re.sub(r'```markdown\n# .+\n', '', response)  # For ```markdo
 cleaned_response = re.sub(r'```(\n| )', '', response)
 readme += cleaned_response + "\n"
 readme += "\n"
-
-#Generate Correlation Heatmap
+##########
+#Correlation Heatmap
 
 # Path to the CSV file
 csv_file = detail['file_path']  # Replace with your actual CSV file path
@@ -257,6 +257,9 @@ cleaned_response = re.sub(r'```(\n| )', '', response)
 readme += cleaned_response + "\n"
 readme += '\n'
 
+##########
+#Regression Analysis
+
 # Check if all specified columns are in the dataframe
 missing_cols = [col for col in column_names if col not in df.columns]
 if missing_cols:
@@ -266,7 +269,7 @@ else:
     df_selected = df[column_names]
 
     # Define the target variable (dependent variable)
-    target = column_names[0]  # Replace with the column you want to predict
+    target = column_names[0]
 
     # Define the feature variables (independent variables)
     features = [col for col in column_names if col != target]
@@ -314,6 +317,9 @@ cleaned_response = re.sub(r'```markdown\n# .+\n', '', response)  # For ```markdo
 cleaned_response = re.sub(r'```(\n| )', '', response)
 readme += cleaned_response + "\n"
 readme += '\n'
+
+###########
+#Outlier and Anomaly Detection
 
 # Identify numerical columns
 numerical_columns = df.select_dtypes(include=[np.number]).columns.tolist()
@@ -364,8 +370,6 @@ plt.tight_layout()
 # Save the plot as 'outlier.png'
 plt.savefig('outlier.png')  # Save the plot with outliers highlighted
 
-# Optionally, display the plot
-
 # Add outliers (indexes) to details
 outlier_indices = df[outlier_mask].index
 detail['outlier_indices'] = outlier_indices.tolist()
@@ -377,6 +381,9 @@ cleaned_response = re.sub(r'```markdown\n# .+\n', '', response)  # For ```markdo
 cleaned_response = re.sub(r'```(\n| )', '', response)
 readme += cleaned_response + "\n"
 readme += '\n'
+
+##########
+#Clustering
 
 # Select numerical columns for clustering
 columns_to_cluster = df.select_dtypes(include=[np.number]).columns.tolist()
@@ -406,7 +413,7 @@ for k in range_k:
 
 # Find the optimal k (highest silhouette score)
 optimal_k = range_k[np.argmax(sil_scores)]
-detail['clusters'] = 4 #add to file details
+detail['clusters'] = optimal_k #add to file details
 
 # K-Means clustering with the optimal k
 kmeans = KMeans(n_clusters=optimal_k, random_state=42)
@@ -428,6 +435,8 @@ cleaned_response = re.sub(r'```markdown\n# .+\n', '', response)  # For ```markdo
 cleaned_response = re.sub(r'```(\n| )', '', response)
 readme += cleaned_response + "\n"
 readme += '\n'
+##########
+#Additional Analysis
 
 #Getting problem statements into a list
 message = [
